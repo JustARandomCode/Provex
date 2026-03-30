@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base: #0A0A12;
+  --color-surface: #0F0F1A;
+  --color-elevated: #161625;
+  --color-primary: #7C3AED;
+  --color-primary-light: #A78BFA;
+  --color-primary-glow: rgba(124, 58, 237, 0.1);
+  --color-accent-green: #22C55E;
+  --color-accent-gold: #F59E0B;
+  --color-accent-blue: #38BDF8;
+  --color-danger: #EF4444;
+  --color-border-subtle: #1E1E2E;
+  --color-border-glow: rgba(124, 58, 237, 0.2);
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #9CA3AF;
+  --color-text-tertiary: #6B7280;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-subtle);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-tertiary);
+}
+
+::selection {
+  background: rgba(124, 58, 237, 0.4);
+  color: white;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-base);
+  color: #ffffff;
+}
+
+#root {
+  min-height: 100vh;
+}
